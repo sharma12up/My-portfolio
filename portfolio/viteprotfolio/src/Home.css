@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+p{
+    text-shadow: 0 0 7px rgba(23, 23, 23, 0.3), 0 0 3px rgba(255, 252, 252, 0.3);
+  }
+.container {
+    /* color: #000000; */
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animation {
+    height:50px;
+    overflow:hidden;
+    margin-left: 1rem;
+}
+  .animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:3rem;
+    margin-bottom: 3rem;
+    display:inline-block;
+}
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+.first div {
+    background-color:#20a7d8;
+  
+}
+.second div {
+    background-color:#CD921E;
+}
+.third div {
+    background-color:#c10528;
+}
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+}
+.mainContainer{
+    width:100%;
+    height: 90vh;
+    /* border:2px solid red; */
+    background-image: url("../assets/bgimage.jpg");
+    background-size:auto;
+    display: flex;
+}
+.textPart{
+    height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+.avatarPart{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    border-radius: 50%;
+    width: 80%;
+    height: 60%;
+    margin-bottom: 20%;
+}
+.textIn{
+   font-weight: 900;
+   font-size: 5rem;
+}
+.aboutMe{
+    display: flex;
+    padding-left: 10%;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.socialCircle{
+    height: 8%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 6%;
+}
+.logoAnchor{
+    height: 100%;
+    width: 25%;
+    margin-left: 2%;
+    font-size: 40px;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+}
+.glow {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b3abab, 0 0 40px #b3abab, 0 0 50px #b3abab, 0 0 60px #b3abab, 0 0 70px #b3abab;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #eff926, 0 0 40px #eff926, 0 0 50px #eff926, 0 0 60px #eff926, 0 0 70px #eff926, 0 0 80px #eff926;
+    }
+  }
+
